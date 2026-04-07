@@ -136,7 +136,7 @@ export default function Hero() {
               key={i}
               className="text-ember font-medium tracking-widest text-sm uppercase"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
-              aria-hidden={i === 1 ? "true" : undefined}
+              aria-hidden={i === 1 ? true : undefined}
             >
               {t}
             </span>
