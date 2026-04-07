@@ -24,10 +24,12 @@ export default function OrderOnline() {
         className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-10"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {[
-          [10, 20, 3], [25, 70, 4], [40, 15, 2], [55, 80, 5], [70, 30, 3],
-          [85, 65, 4], [15, 50, 2], [90, 10, 3], [60, 90, 5], [35, 45, 4],
-        ].map(([cx, cy, r], i) => (
+        {(
+          [
+            [10, 20, 3], [25, 70, 4], [40, 15, 2], [55, 80, 5], [70, 30, 3],
+            [85, 65, 4], [15, 50, 2], [90, 10, 3], [60, 90, 5], [35, 45, 4],
+          ] as [number, number, number][]
+        ).map(([cx, cy, r], i) => (
           <circle
             key={i}
             cx={`${cx}%`}
